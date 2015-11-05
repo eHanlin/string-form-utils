@@ -13,6 +13,18 @@ bower install string-form-utils
 npm install string-form-utils
 ```
 
+## Usage
+
+```js
+var stringFormUtils = require('stringFormUtils');
+
+//output `ａ`
+console.log(stringFormUtils.transformFullwidth("a"));
+
+//output `a`
+console.log(stringFormUtils.transformHalfwidth("ａ"));
+```
+
 ## Build
 
 ```sh
