@@ -1,0 +1,17 @@
+{
+  "name": "string-form-utils",
+  "version": "0.0.1",
+  "authors": [
+    "Sparrow.jang <sparrow.jang@gmail.com>"
+  ],
+  "description":"This is a string tool for full or half text",
+  "dependencies": {
+  },
+  "keywords": [
+    "string",
+    "full width",
+    "half width"
+  ],
+  "devDependencies": {},
+  "license": "MIT"
+}
