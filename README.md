@@ -19,10 +19,10 @@ npm install string-form-utils
 var stringFormUtils = require('stringFormUtils');
 
 //output `ａ`
-console.log(stringFormUtils.transformFullwidth("a"));
+console.log(stringFormUtils.transformToFullwidth("a"));
 
 //output `a`
-console.log(stringFormUtils.transformHalfwidth("ａ"));
+console.log(stringFormUtils.transformToHalfwidth("ａ"));
 ```
 
 ## Build

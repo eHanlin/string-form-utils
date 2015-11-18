@@ -5,11 +5,11 @@ var assert = require("assert");
 describe('Test space', function(){
 
   it('to half width', function(){
-    assert.equal(stringFormUtils.transformHalfwidth("　"), " ");
+    assert.equal(stringFormUtils.transformToHalfwidth("　"), " ");
   });
 
   it('to full width', function(){
-    assert.equal(stringFormUtils.transformFullwidth(" "), "　");
+    assert.equal(stringFormUtils.transformToFullwidth(" "), "　");
   });
 });
 
@@ -31,19 +31,19 @@ describe('Test 33~126 of words', function(){
   fullwidthWordStr = fullwidthWordArray.join('');
 
   it('to full width', function(){
-    assert.equal(stringFormUtils.transformFullwidth(wordStr), fullwidthWordStr);
+    assert.equal(stringFormUtils.transformToFullwidth(wordStr), fullwidthWordStr);
   });
 
   it('to half width', function(){
-    assert.equal(stringFormUtils.transformHalfwidth(fullwidthWordStr), wordStr);
+    assert.equal(stringFormUtils.transformToHalfwidth(fullwidthWordStr), wordStr);
   });
 
   it('full width to full width', function(){
-    assert.equal(stringFormUtils.transformFullwidth(fullwidthWordStr), fullwidthWordStr);
+    assert.equal(stringFormUtils.transformToFullwidth(fullwidthWordStr), fullwidthWordStr);
   });
 
   it('half width to half width', function(){
-    assert.equal(stringFormUtils.transformHalfwidth(wordStr), wordStr);
+    assert.equal(stringFormUtils.transformToHalfwidth(wordStr), wordStr);
   });
 
 });
@@ -52,11 +52,11 @@ describe('Text other words', function(){
   var strs = String.fromCharCode(28204) + String.fromCharCode(35430);
 
   it('full width', function(){
-    assert.equal(stringFormUtils.transformFullwidth(strs), strs);
+    assert.equal(stringFormUtils.transformToFullwidth(strs), strs);
   });
 
   it('half width', function(){
-    assert.equal(stringFormUtils.transformHalfwidth(strs), strs);
+    assert.equal(stringFormUtils.transformToHalfwidth(strs), strs);
   });
 });
 

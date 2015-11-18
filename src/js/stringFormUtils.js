@@ -32,7 +32,7 @@
      * @param {String} val
      * @type String
      */
-    transformFullwidth:function( val ){
+    transformToFullwidth:function( val ){
 
       return _forEachByString(val, function( str, code ){
 
@@ -51,7 +51,7 @@
      * @param {String} val
      * @type String
      */
-    transformHalfwidth:function( val ){
+    transformToHalfwidth:function( val ){
 
       return _forEachByString(val, function( str, code ){
 
