@@ -2,7 +2,7 @@
   "name": "string-form-utils",
   "main": "src/js/stringFormUtils.js",
   "description": "This is a string tool for full or half text",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "devDependencies": {
     "del": "^2.0.2",
     "gulp": "^3.9.0",
